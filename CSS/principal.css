@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 90% !important;
+    height: auto;
+    background-color: #013661;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+
+
+    & .contenedor {
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+        /* display: grid; */
+        /* grid-template-columns: repeat(2, 1fr); */
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        & .icon-img {
+            width:  50%;
+            border-radius:.5rem ;
+        }
+    }
+
+    & .alumno {
+        background-color: rgb(97, 248, 97);
+    }
+
+    & .docente {
+        background-color: rgb(245, 101, 101);
+    }
+
+    & .asignatura {
+        background-color: rgb(138, 255, 255);
+    }
+
+    @media (min-width: 600px) { 
+        .container_grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+
+
+
+
